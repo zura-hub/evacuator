@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./imgs/img-one.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.cont {
+    margin-top: 50px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.main {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.hederText {
+    display: block;
+    margin: auto;
+    color: rgb(5, 3, 3);
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    width: 300px;
+    background-color: rgba(240, 248, 255, 0.781);
+}
+
+.info {
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+    font-style: italic;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 800;
+    padding: 15px 0 15px 0;
+    background-color: rgba(240, 248, 255, 0.781);
+}
+
+.btn {
+    padding: 15px;
+    display: none;
+    margin: auto;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: rgba(255, 235, 205, 0.742);
+    transition: .6s;
+}
+
+.inpt {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+    background-color: rgba(250, 235, 215, 0.867);
+    border: none;
+    display: none;
+    text-align: right;
+}
+
+.price {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(250, 235, 215, 0.867);
+    width: 300px
+}
+
+.phone{
+    color:aliceblue;
+}
+
+
+/* tablet */
+
+@media screen and (min-width:768px) {
+    .hederText{
+        font-size: 35px;
+        width: 500px;
+    }
+
+    .info{
+        margin-top: 30px;
+        font-size: 20px;
+        width: 500px;
+    }
+
+    .btn{
+        margin-top: 15px;
+        width: 500px;
+        font-size: 25px;
+    }
+    
+    .inpt{
+        width: 500px;        
+    }
+
+    ::placeholder{text-align: center;}
+    
+    .price{
+        width: 500px;
+    }
+}
+
+
+/* descktop */
+
+@media screen and (min-width:1440px) {
+    .hederText{
+        font-size: 35px;
+        width: 700px;
+    }
+
+    .info{
+        margin-top: 30px;
+        font-size: 20px;
+        width: 700px;
+    }
+
+    .btn{
+        margin-top: 15px;
+        width: 700px;
+        font-size: 25px;
+    }
+    
+    .inpt{
+        width: 700px;        
+    }
+
+    ::placeholder{text-align: center;}
+    
+    .price{
+        width: 700px;
+    }
+
+    body{
+        overflow: hidden;
+    }
+    
+}
