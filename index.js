@@ -74,7 +74,7 @@ btn.addEventListener('click', () => {
 window.onload = () => {
     setTimeout(() => {
         btn.style.display = 'block';
-    }, 19000);
+    }, 18000);
 }
 
 
