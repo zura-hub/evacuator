@@ -65,10 +65,17 @@ const btn = document.querySelector('.btn');
 const inpt = document.querySelector('.inpt');
 const price = document.querySelector('.price')
 
+let clickCount = 0;
+
 btn.addEventListener('click', () => {
-  inpt.style.display = 'block';
-  btn.textContent = 'დაგვიკავშირდით 599 99 99 99 ';
-  location.href = 'tel:+9955999999';
+  clickCount++;
+
+  if (clickCount === 1) {
+    inpt.style.display = 'block';
+    btn.textContent = 'დაგვიკავშირდით 599 99 99 99 ';
+  } else if (clickCount === 2) {
+    location.href = 'tel:+9955999999';
+  }
 });
 
 window.onload = () => {
